@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Modual</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+</head>
+
+<body>
+    <div class="modul">
+        <div class="content">
+            <div>
+                <h5 class="content__title">Survey</h5>
+                <button class="content__close"  type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+        <div class="content__text">
+             <div class="content__info">
+                <p>Do you like to drink a beer with me?</p>
+            </div>
+            
+            <div class="content__confirm">
+                <div class="content__mouse">
+                    <label class="gt-pulse">
+                        <img class="content__image" src="images/happy.jpg" alt="Happy Bild">
+                        <input type="radio" name="beer" class="contetn__select">
+                        <span class="content__box">Yeahh</span>
+                    </label>
+                </div>
+                <div class="content__mouse">
+                    <label class="gt-pulse">
+                        <img class="content__image" src="images/surprised.jpg" alt="Not Sure Bild">
+                        <input type="radio" name="beer" class="contetn__select">
+                        <span class="content__box">Dont know</span>
+                    </label>
+                </div>
+                <div class="content__mouse">
+                    <label class="gt-pulse">
+                        <img class="content__image" src="images/crying.jpg" alt="Crying Bild">
+                        <input type="radio" name="beer" class="contetn__select">
+                        <span class="content__box">I cant</span>
+                    </label>
+                </div>
+            </div>
+            <div class="content__check">
+                <input type="checkbox" required id="checkbox">
+                <span class="check__box">
+                    I have read the <a href="#">privacy policy.</a>
+                </span>
+            </div>
+            <div>
+                <button type="submit" class="contetn__btn">Send</button>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>  
+    
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Oxygen', sans-serif;
+}
+.modul {
+    position: relative;
+    top: 50px;
+    max-width: 350px;
+    margin: 40px auto;
+    border: 2px solid #322;
+}
+.content {
+    border-bottom: 1px solid #eee;
+    margin: 10px 8px 0px;
+}
+.content__title {
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+button.content__close {
+    right: 0;
+    top: 0;
+    margin: 8px;
+    position: absolute;
+    font-size: 18px;
+    color: #777;
+    font-weight: 900;
+    cursor: pointer;
+    background: none;
+    border: none;
+    
+}
+.content__close:hover {
+    color: #000;
+}
+.content__text {
+    margin: 5px 8px;
+}
+.content__info {
+    padding: 8px 0;
+}
+.content__check {
+    padding: 10px 0px 8px;
+}
+.check__box {
+    position: relative;
+    padding-right: 5px;
+}
+.content__confirm {
+    margin: 10px;
+    position: relative;
+}
+.contetn__btn {
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background: #4CDAFF;
+    cursor: url(images/pint.jpg)4 12, auto;
+}
+
+.content__mouse {
+    display: block;
+    
+}
+.content__mouse:hover {
+    
+} 
+.content__box {
+    padding-left: 5px;
+}
+.contetn__select {
+    margin-left: 10px;
+    
+}
+.content__image {
+    padding-top: 15px;
+    position: relative;
+    top: 6px;
+    transition: transform .2s;
+}
+label {
+    cursor: pointer;
+}
+label > .content__image{
+     
+}
+label > .content__image:hover {
+     -webkit-animation-name: flipInX;
+    animation-name: flipInX;
+    -webkit-animation-duration:1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+label:hover {
+    transition: all 500ms ease;
+    color: #000;
+}
+.gt-pulse:nth-child(1):hover img{
+    animation: grow 1s linear infinite;
+    -webkit-animation: grow 1s linear infinite;
+    -moz-animation: grow 1s linear infinite;
+}
+
+.gt-pulse:nth-child(2):hover img {
+    animation: rotating 1s linear infinite;
+    -webkit-animation: rotating 1s linear infinite;
+    -moz-animation: rotating 1s linear infinite;
+}
+
+@keyframes grow {
+  from { transform: none; }
+	50% { transform: scale(1.4); }
+	to { transform: none; }
+}
+@keyframes rotating {
+ from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
